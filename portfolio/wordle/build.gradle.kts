@@ -1,7 +1,7 @@
 // COMP2850 Portfolio Assignment 1 build script
 
 plugins {
-    kotlin("jvm") version "2.2.20"
+    kotlin("jvm") version "2.1.20"
     id("org.jlleitschuh.gradle.ktlint") version "13.1.0"
     id("io.gitlab.arturbosch.detekt") version "1.23.8"
     application
