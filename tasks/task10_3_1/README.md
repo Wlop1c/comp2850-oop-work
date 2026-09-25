@@ -1,18 +1,22 @@
 # Task 10.3.1
 
-`Check1.kt` won't currently compile, because it is passing a `String?`
-object to a function that expects a `String` object.
+The provided code is the same as Task 10.1, with the call to `display()`
+uncommented.
 
-1. Edit the file and replace the last line of `main()` with this code:
+1. Verify that there is an 'argument type mismatch' error, using
+
+       ./kotlin build
+
+2. Replace the call to `display()` with this `when` expression:
 
    ```kotlin
-   when (input) {
-       null -> println("Result: null")
-       else -> printReversed(input)
+   when (result) {
+      null -> println("?")
+      else -> display(result)
    }
    ```
 
-2. Compile the program. It should now compile successfully.
+3. Run the `build` command again. It should complete without errors.
 
-3. Run the program and experiment with providing different inputs. Try
-   pressing `Ctrl+D` when prompted.
+4. Run the program to verify that it behaves as expected. You should now
+   see a `?` displayed for untranslatable words, instead of `null`.

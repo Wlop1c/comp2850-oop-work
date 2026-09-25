@@ -1,4 +1,4 @@
-// Task 16.3
+// Task 16.3: Picture class, representing a collection of shapes
 
 import java.awt.Graphics2D
 

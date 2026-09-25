@@ -1,9 +1,9 @@
-// Task 13.2
-
-// Class to represent time on a 24-hour clock
+// Task 13.2: class to represent time on a 24-hour clock
 
 data class Time(val hours: Int, val minutes: Int, val seconds: Int) {
     companion object {
+        // Various useful constants relating to time
+
         const val HOURS_PER_DAY = 24
         const val MINUTES_PER_HOUR = 60
         const val SECONDS_PER_MINUTE = 60
@@ -15,13 +15,16 @@ data class Time(val hours: Int, val minutes: Int, val seconds: Int) {
     }
 
     init {
+        // Validation for time parameters
+
         require(hours in 0..MAX_HOURS) { "invalid hours" }
         require(minutes in 0..MAX_MINUTES) { "invalid minutes" }
         require(seconds in 0..MAX_SECONDS) { "invalid seconds" }
     }
 
-    val secondsSinceMidnight: Int get() = (
-        seconds + SECONDS_PER_MINUTE * minutes + SECONDS_PER_HOUR * hours)
+    val secondsSinceMidnight: Int get() {
+        return seconds + SECONDS_PER_MINUTE * minutes + SECONDS_PER_HOUR * hours
+    }
 
     override fun toString() = "%02d:%02d:%02d".format(hours, minutes, seconds)
 

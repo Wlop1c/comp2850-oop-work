@@ -1,4 +1,4 @@
-// Task 17.5
+// Task 17.5: main program
 
 import java.awt.BorderLayout
 import java.awt.Color
@@ -14,8 +14,8 @@ fun main() = SwingUtilities.invokeLater {
         add(Rectangle(15, 120, 25, 60, Color.GREEN))
         add(Circle(290, 110, 60, Color.LIGHT_GRAY))
         add(Circle(165, 320, 35, Color.YELLOW))
-        add(Image(115, 105, "cat.jpg"))
-        add(Image(240, 265, "y-u-no.png"))
+        add(Image(115, 105, "images/cat.jpg"))
+        add(Image(240, 265, "images/y-u-no.png"))
     }
 
     val canvas = Canvas(pic)

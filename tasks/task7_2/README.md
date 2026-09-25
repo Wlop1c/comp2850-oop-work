@@ -1,3 +1,5 @@
 # Task 7.2
 
-Put the code for Task 7.2 in a file named `Array.kt`.
+See the Programming Guide for full details of this task.
+
+Your code should be added to `src/Main.kt`.

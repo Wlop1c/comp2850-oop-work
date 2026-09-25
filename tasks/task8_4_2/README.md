@@ -1,18 +1,31 @@
 # Task 8.4.2
 
-An Amper project demonstrating the performance benefits of sequences.
+A demonstration of the performance benefits of sequences.
 
-The application operates on a text file, whose name should be supplied on
-the command line. A large file (Leo Tolstoy's *War And Peace*) is provided.
-This is over 3 MB in size and has over 66,000 lines of text.
+`Benchmark.kt` contains code to operate on a text file in two different ways,
+with and without using sequences.
+
+The name of the file should be supplied on the command line. We have provided
+a large file (Leo Tolstoy's *War And Peace*) for testing purposes. This is
+over 3 MB in size and has over 66,000 lines of text.
+
+## Linux & macOS
 
 Run the application with
 
-    ./amper run war-and-peace.txt
+    ./run war-and-peace.txt
+
+(This executes the Kotlin Toolchain's `run` task with logging turned off.)
 
 You will see timings for an operation performed on this text file, with and
 without the use of sequences.
 
-If you are using the IntelliJ IDE, you should be able to open this directory
-as an IntelliJ Project. The IDE should create a run configuration that can
-be used to run the application.
+## Windows
+
+If `cmd.exe` is your shell, run the application with
+
+    run war-and-peace.txt
+
+In Windows PowerShell, do
+
+    .\run.bat war-and-peace.txt

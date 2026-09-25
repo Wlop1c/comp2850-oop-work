@@ -1,8 +1,8 @@
 # Task 4.3
 
-Put your solution in a file `ModuleGrade.kt` in this directory.
+See the Programming Guide for full details of this task.
 
-Your program should
+Write your program in `src/Main.kt`. It should
 
 * Check that three command line arguments have been supplied, terminating
   the program with a suitable error if this is not the case

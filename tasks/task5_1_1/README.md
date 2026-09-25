@@ -1,11 +1,10 @@
 # Task 5.1.1
 
-Put your solution to this task in the file `Anagrams.kt`.
+Add the `anagrams()` function from Section 5.1 of the Programming Guide
+to `src/Anagram.kt`.
 
-You will need to add the `anagrams()` function from Section 5.1 of the notes.
+In `src/Main.kt`, write a program that
 
-You will need to add a `main()` function that
-
-* Reads in two strings from the user
-* Compares those strings using `anagrams()`
+* Obtains two words from the user via command line arguments
+* Compares those words using `anagrams()`
 * Displays the results of the comparison to the user

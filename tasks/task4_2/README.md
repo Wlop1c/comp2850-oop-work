@@ -1,8 +1,8 @@
 # Task 4.2
 
-Put your solution in a file `Pizza.kt` in this directory.
+See the Programming Guide for full details of this task.
 
-Your program should
+Your program should be written in `src/Man.kt` and it should
 
 * Present a menu to the user consisting of four pizza options, labelled
   `a`, `b`, `c` and `d`
@@ -13,5 +13,5 @@ Your program should
 * Use an `if` expression to check the length of the input string, and check
   the input is one of the allowed options (use a `Char` range here)
 
-* Print "Order accepted" if the input is valid, "Invalid choice!" if it
-  is not
+* Print "Order accepted" if the input is valid, "Invalid choice!"
+  if it is not

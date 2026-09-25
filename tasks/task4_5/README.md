@@ -1,10 +1,10 @@
 # Task 4.5
 
-The code for this task should go in `OddSum.kt`.
+The code for this task should go in `src/Main.kt`.
 
 The program should
 
-* Prompt the user to enter an integer limit
+* Obtain an integer upper limit from the command line
 * Use a `for` loop to sum up all of the odd integers between 1 and this limit
 * Print the result of the summation
 

@@ -1,9 +1,12 @@
 # Task 5.3.1
 
-Copy your solution to Task 5.1.2 into this directory and modify it.
+1. Copy the source files from Task 5.1.2 into the `src` subdirectory.
 
-You will need to give the `sides` parameter of `rollDice()` a default
-value of 6.
+2. Edit the copy of `Die.kt` so that the number of die sides defaults to 6.
 
-You will also need to change `main()` so that it demonstrates the use of
-the default value.
+3. Modify `main()` in `Main.kt` so that it calls `rollDie()` without
+   providing an argument when the number of die sides has not been provided
+   as a command line argument.
+
+4. Run the program with and without a command line argument, to check that
+   it behaves as required.

@@ -1,4 +1,4 @@
-// Task 13.2
+// Task 13.2: demo program for Time class
 
 fun main() {
     val t = Time(23, 15, 36)

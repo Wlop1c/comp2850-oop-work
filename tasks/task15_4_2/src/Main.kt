@@ -1,4 +1,4 @@
-// Task 15.4.2
+// Task 15.4.2: main program
 
 import java.awt.BorderLayout
 import java.awt.Color
@@ -14,7 +14,7 @@ fun main() = SwingUtilities.invokeLater {
         add(Rectangle(15, 120, 25, 60, Color.GREEN))
         add(Circle(290, 110, 60, Color.LIGHT_GRAY))
         add(Circle(165, 320, 35, Color.YELLOW))
-        // add(Triangle(185, 200, 70, 55, Color.RED))
+        //add(Triangle(185, 200, 70, 55, Color.RED))
     }
 
     val canvas = Canvas(pic)

@@ -1,4 +1,4 @@
-// Task 16.3
+// Task 16.3: Rectangle class, a subclass of Shape
 
 import java.awt.Color
 import java.awt.Graphics2D

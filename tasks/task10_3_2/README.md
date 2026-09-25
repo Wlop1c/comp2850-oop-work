@@ -1,24 +1,22 @@
 # Task 10.3.2
 
-`Check2.kt` won't currently compile, because it is passing a `String?`
-object to a function that expects a `String` object.
+The provided code is the same as Task 10.1, with the call to `display()`
+uncommented.
 
-1. Edit the file and change the parameter type in `printReversed()` to
-   `String?`.
+1. Verify that there is an 'argument type mismatch' error in this code.
 
-2. Add code that performs the null check to the body of the function.
-   You should end up with a function like this:
+2. Modify the implementation of `display()` to look like this:
 
    ```kotlin
-   fun printReversed(text: String?) {
-       when (text) {
-           null -> println("Result: null")
-           else -> println("Result: ${text.reversed().uppercase()}")
-       }
+   display(text: String?) {
+      when (text) {
+         null -> println("?")
+         else -> println(text.uppercase())
+      }
    }
    ```
 
-3. Compile the program. It should now compile successfully.
+3. Run `./kotlin build` again. It should complete without errors.
 
-4. Run the program and experiment with providing different inputs. Try
-   pressing `Ctrl+D` when prompted.
+4. Run the program to verify that it behaves as expected, for both
+   translatable and untranslatable words.

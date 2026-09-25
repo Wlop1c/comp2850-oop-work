@@ -3,14 +3,21 @@
 1. Examine `Person.kt`. This file contains an implementation of the `Person`
    class seen previously.
 
-2. Compile `Person.kt` in the normal way. This should generate a file
-   `Person.class`, containing the Java bytecode representation of the class.
+2. Compile `Person.kt` with
 
-3. In a terminal window, in the same directory as the bytecode file, run
-   the Java class disassembler tool on it, like so:
+       ./kotlin build
+
+3. cd into this directory:
+
+       build/artifacts/CompiledJvmArtifact/task12_5_1jvm/kotlin-output/
+
+   You should see a file named `Person.class`, containing the Java bytecode
+   representation of the class.
+
+4. Run the Java class disassembler tool on the class, like so:
 
        javap -p Person
 
    Study the output carefully.
 
-   See the notes for further explanation.
+See the Programming Guide for further discussion of this task.

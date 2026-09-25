@@ -1,4 +1,4 @@
-// Task 15.4.2
+// Task 15.4.2: Shape class, a superclass for different kinds of shape
 
 import java.awt.Color
 import java.awt.Graphics2D

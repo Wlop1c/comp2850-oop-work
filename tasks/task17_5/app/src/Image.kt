@@ -1,4 +1,5 @@
-// Task 17.5
+// Task 17.5: Image class (subclass of Bitmap, implements Drawable)
+// Note that Bitmap is provided by a separate library module
 
 import com.example.imglib.Bitmap
 import java.awt.Graphics2D

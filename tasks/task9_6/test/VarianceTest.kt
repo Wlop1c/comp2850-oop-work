@@ -1,14 +1,14 @@
-// Task 9.6
+// Task 9.6: unit tests for variance()
 
 import io.kotest.assertions.throwables.shouldThrow
-import io.kotest.core.spec.style.StringSpec
+import io.kotest.core.spec.style.FreeSpec
 import io.kotest.matchers.doubles.plusOrMinus
 import io.kotest.matchers.shouldBe
 
 const val tolerance = 0.000001
 
 @Suppress("unused")
-class VarianceTest : StringSpec({
+class VarianceTest : FreeSpec({
     "Exception if dataset is empty" {
         shouldThrow<IllegalArgumentException> {
             variance(listOf<Double>())

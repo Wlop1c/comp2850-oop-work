@@ -1,14 +1,11 @@
 # Task 1.4
 
-Simple example of a Gradle-based Kotlin project.
+Small example of a Gradle-based Kotlin project. Compare this with the
+Kotlin Toolchain project in Task 1.3.1.
 
 To run the application, building it first if necessary, do
 
     ./gradlew run
-
-To run the unit tests, do
-
-    ./gradlew test
 
 To create a distributable version of the application, do
 

@@ -1,3 +1,5 @@
 # Task 7.3.1
 
-Put your code for this task in the file `List.kt`.
+Your code should be added to `src/Main.kt`.
+
+See the Programming Guide for full details of this task.

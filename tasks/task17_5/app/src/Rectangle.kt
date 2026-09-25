@@ -1,4 +1,4 @@
-// Task 17.5
+// Task 17.5: Rectangle class (subclass of Shape, implements Drawable)
 
 import java.awt.Color
 import java.awt.Graphics2D

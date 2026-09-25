@@ -1,5 +1,9 @@
 # Task 15.3
 
-The code for this task should go in `Override.kt`.
+The code for the first part of this task should go in `Person.kt` and
+`Student.kt`, in the `src` subdirectory.
 
-See the notes for further information.
+The code for the second part of the task should be added to `Main.kt`.
+
+See the Programming Guide for details of the code that you need to
+write in these three files.

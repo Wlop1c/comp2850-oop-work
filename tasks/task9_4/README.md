@@ -1,6 +1,12 @@
 # Task 9.4
 
-Study the code in `Catch.kt`.
+This is a Gradle project containing code to help you explore how catch
+blocks intercept exceptions.
 
-Compile the program and try running it a number of times, with a variety
-of different inputs, to see how it behaves.
+Study the code in `Main.kt`, then run the program with
+
+    ./gradlew run
+
+Try doing this with a variety of different inputs, to see how it behaves.
+
+See the Programming Guide for further details.

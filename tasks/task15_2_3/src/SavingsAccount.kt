@@ -1,3 +1,1 @@
-// Task 15.2.3
-
-// Implement SavingsAccount class here
+// Task 15.2.3: SavingsAccount class

@@ -2,13 +2,14 @@
 
 1. Examine `BankAccount.kt`.
 
-   Notice that `balance` has been given a custom  setter that is private.
+   Notice that `balance` has been given a custom setter that is **private**.
+
    This means that only code within `BankAccount` has permission to
    assign to `balance` directly. The methods `deposit()` and `withdraw()`
    constitute the public API for altering the balance on an account.
 
-2. Edit `SavingsAccount.kt` and implement the `SavingsAccount` class in
-   this file, using the class diagram in the notes as your guide.
+2. Edit `SavingsAccount.kt` and implement the `SavingsAccount` class in this
+   file, as indicated by the class diagram in Programming Guide.
 
    Note that the `rate` property should be a `val`. The `applyInterest()`
    method should treat `rate` as as a percentage and use it to compute
@@ -17,7 +18,7 @@
 
    Check that both classes compile, using
 
-       ./amper build
+       ./kotlin build
 
 3. Edit `Main.kt` and modify `main()` so that it
 
@@ -29,4 +30,24 @@
 
    Run your program with
 
-     ./amper run
+       ./kotlin run
+
+   or use
+
+       ./run
+
+   if you want to suppress KT's logging messages.
+
+## If Using Windows
+
+The commmands shown above assume you are using Linux or macOS. If you are
+working on a Windows system and `cmd.exe` is your shell, then simply omit the
+`./` from those commands.
+
+If you are in Windows PowerShell, use `.\kotlin.bat` and `.\run.bat`.
+
+## IntelliJ IDE
+
+If you are using IntelliJ, you should be able to open this directory as an
+IntelliJ Project. The IDE should create a run configuration that can be
+used to run the application.

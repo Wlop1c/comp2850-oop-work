@@ -1,25 +1,30 @@
 # Task 17.5
 
-This is an Amper project, containing Version 4 of the graphics application
-case study.
+This is a Kotlin Toolchain project, containing Version 4 of the graphics
+application case study.
 
-**NOTE: you will need to run this code on your own PC or on SoCS Linux
-machines. You will not be able to try it out in a Codespace!**
+Note: unlike earlier versions, the project is organized as two separate
+**modules**. The `app` module contains the application itself, whereas the
+`lib` module contains the image handling library needed by the application.
 
-The application uses Java's Swing UI framework and displays a canvas on
-which a collection of graphic elements are drawn.
+To build & run the application on Linux or macOS, do
 
-To build & run the application, do
+    ./kotlin run
 
-    ./amper run
+or use
 
-Omit the `./` if using `cmd.exe` on Windows; invoke Amper with `.\amper.bat`
-if using Windows Powershell.
+    ./run
+
+which will suppress logging messages.
+
+On Windows, omit the `./` from the commands shown above if using `cmd.exe`
+as your shell. If using Windows PowerShell, you can invoke the scripts with
+`.\kotin.bat` & `.\run.bat`.
 
 ## Discussion of Source Code
 
 This final version of the application has the ability to draw images as well
-as shapes.
+as shapes. The relevant source code can be found in `app/src`.
 
 As in Version 3, circles, rectangles and other shapes are represented as
 subclasses of an abstract `Shape` class.

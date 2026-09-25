@@ -1,6 +1,6 @@
 # Task 15.2.1
 
-1. Add the following code to `Subclasses.kt`:
+1. Add the following class definitions to `Classes.kt`:
 
    ```kotlin
    open class Parent
@@ -8,15 +8,18 @@
    class Child : Parent()
    ```
 
-   Try compiling the file. This should work, producing bytecode files named
-   `Parent.class` and `Child.class`.
+2. Try compiling the code, with
 
-2. Add this code to the file:
+       ./kotlin build
+
+   This should succeed.
+
+3. Add a subclass of `Child` to the file:
 
    ```kotlin
    class GrandChild : Child()
    ```
 
-   Try recompiling the file. Take note of the compiler error message.
+   Try recompiling. Take note of the compiler error message.
 
-3. Fix the problem and then verify that the file compiles successfully. 
+4. Fix the problem and then verify that the file compiles successfully. 

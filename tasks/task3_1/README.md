@@ -1,13 +1,25 @@
 # Task 3.1
 
-The code for this task should go in `Args.kt`.
+1. Write a program in `src/Main.kt` that accepts command line arguments
+   and prints the values of the first two of those arguments.
 
-Compile the program with
+2. Try running the program in the following two ways:
 
-    kotlinc Args.kt
+       ./kotlin run arg1 arg2
+       ./kotlin run 'arg1 arg2'
 
-Run it in various different ways, with these commands:
+   Do you understand why the second of these causes a runtime error?
 
-    kotlin ArgsKt
-    kotlin ArgsKt arg1 arg2
-    kotlin ArgsKt 'arg1 arg2'
+3. Add code to check that two command line arguments have been supplied.
+   If this isn't the case, the program should print a suitable message and
+   then terminate by calling `exitProcess()` with a non-zero exit status.
+
+4. Try running the program with different numbers of command line arguments,
+   checking the exit status in each case:
+
+       ./kotlin run arg1
+       echo $?
+       ./kotlin run arg1 arg2
+       echo $?
+       ./kotlin run arg1 arg2 arg3
+       echo $?

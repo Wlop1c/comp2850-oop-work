@@ -1,4 +1,4 @@
-// Task 17.5
+// Task 17.5: Canvas class
 
 import java.awt.Dimension
 import java.awt.Graphics

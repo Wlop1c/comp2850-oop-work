@@ -10,7 +10,7 @@
 
    Check that the class compiles, using
 
-       ./amper build
+       ./kotlin build
 
 3. Add an `init` block to `Circle` that guarantees `radius` will be greater
    than zero when a `Circle` object is created.
@@ -30,4 +30,24 @@
 
    Run the program with
 
-       ./amper run
+       ./kotlin run
+
+   or use
+
+       ./run
+
+   if you want to suppress the Kotlin Toolchain's logging messages.
+
+## If Using Windows
+
+The commmands shown above assume you are using Linux or macOS. If you are
+working on a Windows system and `cmd.exe` is your shell, then simply omit the
+`./` from those commands.
+
+If you are using Windows PowerShell, use `.\kotlin.bat` & `.\run.bat`.
+
+## IntelliJ IDE
+
+If you are using IntelliJ, you should be able to open this directory as an
+IntelliJ Project. The IDE should create a run configuration that can be
+used to run the application.

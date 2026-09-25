@@ -1,4 +1,4 @@
-// Task 16.3
+// Task 16.3: abstract Shape class
 
 import java.awt.Color
 import java.awt.Graphics2D

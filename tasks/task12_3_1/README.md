@@ -1,21 +1,30 @@
 # Task 12.3.1
 
-1. Edit the file `Construct.kt`. Try compiling and running the code.
+1. Study the code in `Point.kt` and `Main.kt`, then verify that the program
+   runs using
 
-2. Change `main()` so that it attempts to create the `Point` object without
-   specifying values for `x` and `y`. Try compiling the code. What errors
-   do you see?
+       ./kotlin run
+
+2. Edit `Main.kt` and modify the line that creates the `Point` object,
+   removing the values that have been supplied for x and y coordinates. Try
+   recompiling with
+
+       ./kotlin build
+
+   What errors do you see?
 
 3. Modify the class definition so that it includes the secondary constructor
-   described in the notes. Compile and run the program to verify that this
-   fixes the issue.
+   described in the Programming Guide. Compile and run the program to verify
+   that this fixes the issue.
 
-4. Now change the first line of `main()` to be
+4. Now add these lines to `main()`:
 
    ```kotlin
-   val p = Point(4, 7)
+   val q = Point(4, 7)
+   println("(${q.x}, ${q.y})")
    ```
 
    Try recompiling the code. What happens?
 
 5. Add another secondary constructor to `Point` that fixes the issue.
+   Verify that the program compiles and runs successfully.

@@ -1,12 +1,12 @@
-// Task 13.2
+// Task 13.2: unit tests for Time class
 
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.assertions.withClue
-import io.kotest.core.spec.style.StringSpec
+import io.kotest.core.spec.style.FreeSpec
 import io.kotest.matchers.shouldBe
 
 @Suppress("unused")
-class TimeTest : StringSpec({
+class TimeTest : FreeSpec({
     "Hours stored correctly" {
         val midnight = Time(0, 0, 0)
         val noon = Time(12, 0, 0)

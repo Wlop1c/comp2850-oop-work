@@ -1,11 +1,21 @@
 # Task 10.1
 
-1. Study the code in `Null.kt` carefully.
+1. Run the program with the word "hello" as a command line argument:
 
-2. Compile and run the program. Enter some text when prompted.
+       ./kotlin run hello
 
-3. Rerun the program, but this time press `Ctrl+D` when prompt for input.
-   What happens?
+   It should print the French translation of this word.
 
-4. Uncomment the final line of `main()`, then try compiling the program
-   again. What message do you see from the compiler?
+2. Run the program with a word on the command line that isn't in the
+   translation database (see `en-to-fr.csv`).
+
+   It should print "null" in this case.
+
+3. Comment out the call to `println()` and uncomment the call to `display()`.
+   Attempt to recompile the program, with
+
+       ./kotlin build
+
+   This should fail, with an 'argument type mismatch' error.
+
+See the Programming Guide for further discussion of what is going on here.

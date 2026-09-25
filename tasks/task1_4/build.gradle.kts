@@ -1,30 +1,22 @@
 plugins {
-    kotlin("jvm") version "2.1.20"
+    kotlin("jvm") version "2.3.21"
     application
-}
-
-repositories {
-    mavenCentral()
-}
-
-val kotestVersion = "5.9.1"
-
-dependencies {
-    testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
-    testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
 }
 
 kotlin {
     jvmToolchain(21)
 }
 
-tasks.withType<Test>().configureEach {
-    useJUnitPlatform()
-    testLogging {
-        events("passed", "skipped", "failed")
-    }
+application {
+    mainClass = "MainKt"
+    applicationDefaultJvmArgs = listOf("--enable-native-access=ALL-UNNAMED")
 }
 
-application {
-    mainClass = "HelloKt"
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(libs.datetime.jvm)
+    implementation(libs.mordant)
 }

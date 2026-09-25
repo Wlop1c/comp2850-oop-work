@@ -1,8 +1,6 @@
 # Task 10.4
 
-Copy `Check2.kt` from `task10_3_2` and rename it `SafeCall.kt`.
+The provided code is the same as the solution to Task 10.3.2. The goal
+here is to simplify this code using the safe call operator.
 
-Simplify `printReversed()` using the safe call operator.
-
-Finally, compile and run the program to check that it behaves in the same
-way as `Check2.kt`.
+See the Programming Guide for further details.

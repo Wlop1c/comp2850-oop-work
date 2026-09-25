@@ -1,10 +1,12 @@
 // Task 8.3: functions for temperature analysis
 
+import kotlin.io.path.Path
+import kotlin.io.path.forEachLine
+
 typealias Record = Pair<String,Double>
 
-fun fetchData(): List<Record> {
-  // Create and return a simulated dataset here
-  // Use the listOf() and to() functions to create the dataset
+fun fetchData(filename: String) = buildList {
+    // Finish the implementation of this function
 }
 
 // Challenge: compute average temperature with one line of code

@@ -1,5 +1,5 @@
-// Task 15.2.3
+// Task 15.2.3: demo program
 
 fun main() {
-    // Write your main program here
+    // Write code to demonstrate the classes here
 }

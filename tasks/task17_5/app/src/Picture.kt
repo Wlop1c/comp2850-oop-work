@@ -1,4 +1,4 @@
-// Task 17.5
+// Task 17.5: Picture class, representing a collection of Drawable things
 
 import java.awt.Graphics2D
 

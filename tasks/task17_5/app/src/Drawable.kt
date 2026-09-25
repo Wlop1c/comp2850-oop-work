@@ -1,4 +1,4 @@
-// Task 17.5
+// Task 17.5: Drawable interface
 
 import java.awt.Graphics2D
 

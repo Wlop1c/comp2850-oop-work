@@ -1,11 +1,5 @@
 # Task 7.3.2
 
-Copy your code for Task 7.3.1 to this directory.
+Copy `Main.kt` from Task 7.3.1 into the `src` subdirectory.
 
-Edit `List.kt` and modify it so that it creates a mutable list rather than
-an immutable list.
-
-Check that this fixes the compiler errors that you saw in Task 7.3.1.
-
-Try out some of the list modification operations that are supported for
-mutable lists.
+See the Programming Guide for full details of this task.

@@ -1,20 +1,23 @@
 # Task 15.4.1
 
-This is an Amper project, containing Version 1 of the graphics application
+This is a KT project, containing Version 1 of the graphics application
 case study.
-
-**NOTE: you will need to run this code on your own PC or on SoCS Linux
-machines. You will not be able to try it out in a Codespace!**
 
 The application uses Java's Swing UI framework and displays a canvas on
 which a collection of graphic elements are drawn.
 
-To build & run the application, do
+To build & run the application on Linux or macOS, do
 
-    ./amper run
+    ./kotlin run
 
-Omit the `./` if using `cmd.exe` on Windows; invoke Amper with `.\amper.bat`
-if using Windows Powershell.
+or use
+
+    ./run
+
+to suppress logging messages.
+
+On Windows, omit the `./` if using `cmd.exe` as your shell. If using Windows
+PowerShell, you can run the scripts with `.\amper.bat` & `.\run.bat`.
 
 ## Discussion of Source Code
 

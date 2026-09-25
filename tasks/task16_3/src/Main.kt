@@ -1,4 +1,4 @@
-// Task 16.3
+// Task 16.3: main program
 
 import java.awt.BorderLayout
 import java.awt.Color

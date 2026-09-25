@@ -1,15 +1,20 @@
 # Task 5.3.2
 
-Put your solution to this task in the file `Dice.kt`.
+See the Programming Guide for full details of this task.
 
-You will need to write a function `rollDice()`, similar to the `rollDie()`
-function of earlier tasks. This function will simulate the rolling of
-**multiple dice**, all of the same type. It will need to add up the numbers
-on each die and print the total.
+1. Implement the `rollDice()` function in `src/Dice.kt`. This function should
+   have two parameters:
 
-The function will need two parameters: the number of sides (defaulting to 6),
-and the number of dice required (defaulting to 1).
+   - The number of dice to roll (default = 1)
+   - The number of die sides (default = 6)
 
-You will need to write a `main()` function that tests `rollDice()` in
-various ways, using both the positional and named argument styles, and also
-omitting arguments so that you can see the default values being used.
+2. Implement a `main()` function in `src/Main.kt` that accepts a 'dice
+   specification' as its only command line argument.
+
+   A dice specification considers of the number of dice to roll, followed
+   by the character `d`, followed by the number of die sides.
+
+   Examples: 3d6, 2d12, 1d8
+
+   Your program should parse this dice specification and then invoke
+   `rollDice()` accordingly.
