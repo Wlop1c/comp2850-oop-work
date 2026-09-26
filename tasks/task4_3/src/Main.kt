@@ -5,7 +5,7 @@ import kotlin.system.exitProcess
 fun main(args: Array<String>) {
 
     if (args.size != 3) {
-        println("Error: Please provide exactly three integer marks.")
+        println("Error:  provide  three integer marks.")
         exitProcess(1)
     }
     val mark1 = args[0].toIntOrNull()
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     val mark3 = args[2].toIntOrNull()
 
     if (mark1 == null || mark2 == null || mark3 == null) {
-        println("Error: All marks must be valid integers.")
+        println("Error: marks must valid integers.")
         exitProcess(1)
     }
     val average = (mark1 + mark2 + mark3) / 3.0
