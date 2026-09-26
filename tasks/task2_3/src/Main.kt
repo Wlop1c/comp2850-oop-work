@@ -1,7 +1,7 @@
 // Task 2.3
 
 fun main() {
-    val myAge = 29u
+    val myAge = 29
     val universeAge = 13_000_000_000L
     val status = 'M'
     val name = "Sarah"
