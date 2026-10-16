@@ -1,12 +1,19 @@
-# UML Class Diagram
-
-Here is a UML class diagram, specified using [Mermaid][mer].
-
-```mermaid
-%% Replace this line and the two below
 classDiagram
-  note "Placeholder for a real class diagram"
-```
-
-
-[mer]: https://mermaid.js.org/
+class Customer {
+name: String
+address: String
+placeOrder()
+}
+class Order {
+orderNumber: Int
+datePlaced: String
+deliveryDate: String
+checkStock()
+takePayment()
+}
+class OrderItem {
+name: String
+description: String
+}
+Customer --> Order : places
+Order --> OrderItem : includes
