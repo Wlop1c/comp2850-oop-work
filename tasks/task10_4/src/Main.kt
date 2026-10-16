@@ -1,12 +1,10 @@
-// Task 10.4
-
+/// Task 10.4
 import kotlin.system.exitProcess
 
+
 fun display(text: String?) {
-    when (text) {
-        null -> println("?")
-        else -> println(text.uppercase())
-    }
+
+    println(text?.uppercase())
 }
 
 fun main(args: Array<String>) {
@@ -20,6 +18,5 @@ fun main(args: Array<String>) {
     val word = args[0].lowercase()
     val result = translate[word]
 
-    //println(result)
     display(result)
 }
