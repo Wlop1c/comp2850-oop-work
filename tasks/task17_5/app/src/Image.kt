@@ -1,13 +1,21 @@
 // Task 17.5: Image class (subclass of Bitmap, implements Drawable)
-// Note that Bitmap is provided by a separate library module
-
-import com.example.imglib.Bitmap
 import java.awt.Graphics2D
-import java.awt.image.RescaleOp
+import java.awt.image.BufferedImage
+import javax.imageio.ImageIO
+import java.io.File
 
-class Image(val x: Int, val y: Int, filename: String) : Bitmap(filename), Drawable {
-    override fun draw(context: Graphics2D) {
-        val nullOp = RescaleOp(1.0f, 0.0f, null)
-        context.drawImage(pixelData, nullOp, x, y)
+open class Bitmap(val fileName: String, val width: Int, val height: Int)
+
+class Image(val x: Int, val y: Int, fileName: String) : Bitmap(fileName, 0, 0), Drawable {
+    private val img: BufferedImage? = try {
+        ImageIO.read(File("images/$fileName"))
+    } catch (e: Exception) {
+        null
+    }
+
+    override fun draw(gc: Graphics2D) {
+        img?.let {
+            gc.drawImage(it, x, y, null)
+        }
     }
 }
