@@ -1,27 +1,20 @@
 // Task 15.4.1: main program
-
-import java.awt.BorderLayout
-import java.awt.Color
 import javax.swing.JFrame
-import javax.swing.JScrollPane
-import javax.swing.SwingUtilities
+import java.awt.Color
 
-fun main() = SwingUtilities.invokeLater {
-    val pic = Picture().apply {
-        add(Rectangle(45, 30, 30, 30, Color.DARK_GRAY))
-        add(Rectangle(285, 150, 90, 65, Color.BLUE))
-        add(Circle(100, 185, 50, Color.MAGENTA))
-        add(Rectangle(15, 120, 25, 60, Color.GREEN))
-        add(Circle(290, 110, 60, Color.LIGHT_GRAY))
-        add(Circle(165, 320, 35, Color.YELLOW))
-    }
+fun main() {
+    val picture = Picture()
+    picture.add(Circle(50, 50, Color.RED, 50))
+    picture.add(Rectangle(200, 100, Color.BLUE, 100, 80))
+    picture.add(Circle(150, 200, Color.GREEN, 40))
+    picture.add(Rectangle(50, 250, Color.MAGENTA, 80, 50))
 
-    val canvas = Canvas(pic)
+    val canvas = Canvas(picture)
+    canvas.background = Color.WHITE
 
-    JFrame("Picture App v1").apply {
-        isVisible = true
-        defaultCloseOperation = JFrame.EXIT_ON_CLOSE
-        add(JScrollPane(canvas), BorderLayout.CENTER)
-        pack()
-    }
+    val frame = JFrame("Picture App")
+    frame.defaultCloseOperation = JFrame.EXIT_ON_CLOSE
+    frame.setSize(400, 400)
+    frame.add(canvas)
+    frame.isVisible = true
 }
