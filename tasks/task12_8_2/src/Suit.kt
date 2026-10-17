@@ -1,12 +1,11 @@
 // Task 12.8.2: enum class for playing card suits
-
 enum class Suit(val symbol: Char) {
-    Clubs('♣'),
-    Diamonds('♦'),
-    Hearts('♥'),
-    Spades('♠');
+    CLUBS('\u2663'),    // ♣
+    DIAMONDS('\u2666'), // ♦
+    HEARTS('\u2665'),   // ♥
+    SPADES('\u2660');   // ♠
 
-    val plainSymbol get() = name[0]
-
-    override fun toString() = "$symbol"
+    override fun toString(): String {
+        return symbol.toString()
+    }
 }
