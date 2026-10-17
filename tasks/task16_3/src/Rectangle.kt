@@ -1,18 +1,10 @@
 // Task 16.3: Rectangle class, a subclass of Shape
-
-import java.awt.Color
 import java.awt.Graphics2D
-import java.awt.geom.Rectangle2D
+import java.awt.Color
 
-class Rectangle(x: Int, y: Int, val width: Int, val height: Int, color: Color) : Shape(x, y, color) {
-    override fun draw(context: Graphics2D) {
-        val shape = Rectangle2D.Float(x.toFloat(), y.toFloat(), width.toFloat(), height.toFloat())
-
-        val oldColor = context.paint
-        context.paint = color
-        context.fill(shape)
-        context.paint = Color.BLACK
-        context.draw(shape)
-        context.paint = oldColor
+class Rectangle(x: Int, y: Int, color: Color, val width: Int, val height: Int) : Shape(x, y, color) {
+    override fun draw(gc: Graphics2D) {
+        gc.color = color
+        gc.fillRect(x, y, width, height)
     }
 }
